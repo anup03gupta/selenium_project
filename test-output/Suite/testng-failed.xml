@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.test.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="sBrowser" value="firefox"/>
+    <classes>
+      <class name="com.test.SecondTest">
+        <methods>
+          <include name="tc_3"/>
+        </methods>
+      </class> <!-- com.test.SecondTest -->
+      <class name="com.test.FirstTest">
+        <methods>
+          <include name="tc_1"/>
+          <include name="tc_2"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.test.FirstTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="sBrowser" value="chrome"/>
+    <classes>
+      <class name="com.test.SecondTest">
+        <methods>
+          <include name="tc_3"/>
+        </methods>
+      </class> <!-- com.test.SecondTest -->
+      <class name="com.test.FirstTest">
+        <methods>
+          <include name="tc_1"/>
+          <include name="tc_2"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.test.FirstTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
