@@ -28,7 +28,7 @@ public class FirstTest {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\ag52334\\Downloads\\chromedriver.exe");
 			WebDriver driver=new ChromeDriver();
 	
 			//WebDriver driver = new FirefoxDriver();
