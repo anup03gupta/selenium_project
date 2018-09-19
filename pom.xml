@@ -159,12 +159,7 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.14.0</version>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
-<dependency>
-    <groupId>org.sonarsource.scanner.maven</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.5.0.1254</version>
-</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
